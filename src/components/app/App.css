@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 .App-logo {
   height: 100px;
@@ -7,38 +8,29 @@
   pointer-events: none;
 }
 .App-link {
-  color: #2045eb;
+  color: #a8ea10;
 }
-.Dash-board-main {
+.Dashboard-main {
+  margin:10px;
   min-height: 50vh;
-  background-color:#2045eb;
+  background-color:#328bf1;
 }
 .News-feed {
-  min-height: 20vh;
+  margin: 10px;
+  min-height: 5vh;
   background-color:aquamarine;
 }
 .Adv {
-  min-height: 30vh;
+  margin: 10px;
+  min-height: 45vh;
   background-color:cadetblue;
 }
 
-.Dash-board-btn-up,
-.Dash-board-btn-middle,
-.Dash-board-btn-down {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  color:cornsilk;
+.Dashboard-main-btn {
+  margin: 10px;
 }
-.Dash-board-btn-up {
-  align-items: flex-end;
-}
-.Dash-board-btn-down {
-  align-items: flex-start;
-}
-.Certifying-commission-Dash-board,
-.Seminars-Dash-board {
-  margin-left: 20px;
-  margin-right: 20px;
+.btn {
+  background-color: rgb(181, 245, 4);
+  border-bottom-color: #060aca;
+  color: #060aca;
 }
