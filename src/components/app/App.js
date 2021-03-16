@@ -7,9 +7,9 @@ import Modal from '../modal';
 
 const App = () => {
 
-  const [modalLogin, setModalLogin] = useState(true)
-  const [modalRegistrate, setModalRegistrate] = useState(true)
-  const [modalForgetPassword, setModalForgetPassword] = useState(true)
+  const [modalLogin, setModalLogin] = useState(false)
+  const [modalRegistrate, setModalRegistrate] = useState(false)
+  const [modalForgetPassword, setModalForgetPassword] = useState(false)
 
   return (
     <div className="App">
@@ -50,14 +50,40 @@ const App = () => {
       <Modal active={modalLogin} setActive={setModalLogin}>
         <h2 className="modal__header">Login to your account</h2>
         <hr></hr>
-        <button 
-        className="modal__registrate"
-        onClick={() => setModalRegistrate(true) & setModalLogin(false) }
-         >Registrate</button>
-         <button 
-        className="modal__forget__password"
-        onClick={() => setModalForgetPassword(true) & setModalLogin(false) }
-         >Forget my password</button>
+        <form>
+          <div> 
+            <h3>Your account:</h3>
+            <input 
+            className="modal__account"
+            type="login"
+            name="account"
+            placeholder="Enter your e-mail or phone number +380 (XX) XXXXXXX"
+            ></input>
+            <h3>Your password:</h3>
+            <input 
+            className="modal__account"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            ></input>
+          </div>  
+          <div className='modal__footer'>
+            <div className='modal__button'>
+              {/* <button type="button" className="btn btn-warning">Clear</button> */}
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </div>
+            <div className='modal__button__short'>
+              <button 
+              className="modal__registrate btn btn-link"
+              onClick={() => setModalRegistrate(true) & setModalLogin(false) }
+              >Registrate</button>
+              <button 
+              className="modal__forget__password btn btn-link"
+              onClick={() => setModalForgetPassword(true) & setModalLogin(false) }
+              >Forget my password</button>
+            </div>
+          </div>
+        </form>
       </Modal>
       <Modal active={modalRegistrate} setActive={setModalRegistrate}>
         <h2 className="modal__header">Registrate new account</h2>
