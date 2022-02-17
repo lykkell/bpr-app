@@ -1,3 +1,3 @@
-import Likar-account-card from './likar-account-card';
+import LikarAccountCard from './likar-account-card';
 
-export default Likar-account-card;
+export default LikarAccountCard;
