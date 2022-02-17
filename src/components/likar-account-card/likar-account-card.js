@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import './likar-account-card.css';
-import account-logo from './account-logo.jpg';
+import accountphoto from './accountphoto.jpg';
 
 const LikarAccountCard = ({active, setActive, children}) => {
 
@@ -8,7 +8,7 @@ const LikarAccountCard = ({active, setActive, children}) => {
        <div className='LikarAccountCard'>
            <div className='container'>
                 <div className="d-flex justify-content-center">
-                    <img src={account-logo} className="Account-logo" alt="account-logo" />
+                    <img src={accountphoto} className="Account-photo" alt="account-img" />
                 </div>
            </div>
        </div>
