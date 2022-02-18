@@ -2,11 +2,13 @@
 // import React from 'react';
 import React, { useState } from "react";
 import logo from './logo.jpg';
+// import accountphoto from '..components/account-card/accountphoto.jpg';
 import { useTranslation } from "react-i18next";
 import '../translations/i18n';
 import i18n from "i18next";
 import './App.css';
 import Modal from '../modal';
+import AccountCard from "../account-card";
 
 const App = () => {
   const { t } = useTranslation();
@@ -20,6 +22,7 @@ const App = () => {
   const [modalLogin, setModalLogin] = useState(false)
   const [modalRegistrate, setModalRegistrate] = useState(false)
   const [modalForgetPassword, setModalForgetPassword] = useState(false)
+  const [accountCard, setAccountCard] = useState(false)
 
   return (
     
@@ -40,7 +43,7 @@ const App = () => {
           className="Dashboard-main d-flex flex-column justify-content-center" alt="Main dashboard">
           <div className="Dashboard-main-btn d-flex justify-content-around">
             <button 
-              onClick={() => setModalLogin(true)}
+              onClick={() => setAccountCard(true)}
               type="button" 
               className="btn btn-primary btn-lg" 
               >{t("Likar")}</button>
@@ -92,7 +95,11 @@ const App = () => {
           <div className='modal__footer'>
             <div className='modal__button'>
               {/* <button type="button" className="btn btn-warning">Clear</button> */}
-              <button type="submit" className="btn btn-primary">{t("Submit")}</button>
+              <button 
+              type="submit"
+              className="btn btn-primary">
+                {t("Submit")}
+              </button>
             </div>
             <div className='modal__button__short'>
               <button 
@@ -110,11 +117,25 @@ const App = () => {
       <Modal lang={language} active={modalRegistrate} setActive={setModalRegistrate}>
         <h2 className="modal__header">Registrate new account</h2>
         <hr></hr>
-        </Modal>
+      </Modal>
       <Modal lang={language} active={modalForgetPassword} setActive={setModalForgetPassword}>
         <h2 className="modal__header">Forget my password</h2>
         <hr></hr>
       </Modal>
+      <AccountCard lang={language} active={accountCard} setActive={setAccountCard}>
+        <div className="container">test
+          <h2 className="account__card__header">{t("Your account")}</h2>
+          <div className='account__card__header'>
+            {/* <img src={accountphoto} className="AccountPhoto" alt="accountphoto" /> */}
+            <h3>First name</h3>
+            <h3>Second name</h3>
+            <h3>Login account</h3>
+            <h3>Password account</h3>
+            <h3>email account</h3>
+            <h3>phone account</h3>
+          </div>
+        </div>
+      </AccountCard>
     </div>
   );
 }
