@@ -2,7 +2,7 @@
 // import React from 'react';
 import React, { useState } from "react";
 import logo from './logo.jpg';
-// import accountphoto from '..components/account-card/accountphoto.jpg';
+import accountpicture from './accountpicture.jpg';
 import { useTranslation } from "react-i18next";
 import '../translations/i18n';
 import i18n from "i18next";
@@ -123,10 +123,12 @@ const App = () => {
         <hr></hr>
       </Modal>
       <AccountCard lang={language} active={accountCard} setActive={setAccountCard}>
-        <div className="container">test
+        <div className="container">
           <h2 className="account__card__header">{t("Your account")}</h2>
           <div className='account__card__header'>
-            {/* <img src={accountphoto} className="AccountPhoto" alt="accountphoto" /> */}
+          <div className="d-flex justify-content-center">
+            <img src={accountpicture} className="accountpicture" alt="addpicture" />
+          </div>
             <h3>First name</h3>
             <h3>Second name</h3>
             <h3>Login account</h3>
