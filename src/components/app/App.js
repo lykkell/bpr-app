@@ -125,18 +125,25 @@ const App = () => {
       <AccountCard lang={language} active={accountCard} setActive={setAccountCard}>
         <div className="container">
           <h2 className="account__card__header">{t("YourAccount")}</h2>
-          <div className='account__card__header'>
-          <div className="d-flex justify-content-center">
-            <img src={accountpicture} className="accountpicture" alt="addpicture" />
-          </div>
-            <h3>{t("FirstName")}:</h3>
-            <h3>{t("SecondName")}:</h3>
-            <h3>{t("Login")}:</h3>
-            <h3>{t("Password")}:</h3>
-            <h3>{t("eMail")}:</h3>
-            <h3>{t("Phone")}:</h3>
-            <h3>{t("Note")}:</h3>
-          </div>
+            <div className="d-flex flex-column justify-content-center">
+              <div className="account__card__content d-flex flex-row ">
+                  <img src={accountpicture} className="accountpicture" alt="addpicture" />
+                  <div className="account__card__content d-flex flex-column ">
+                    <h3 classNmame="d-flex justify-content-start">{t("FirstName")}:</h3>
+                    <h3>{t("SecondName")}:</h3>
+                    <h3>{t("Phone")}:</h3>
+                    <h3>{t("eMail")}:</h3>
+                  </div>
+              </div>
+              {/* <div className="d-flex account__card__content ">
+                <h3>{t("Login")}:</h3>
+                <h3>{t("Password")}:</h3>
+              </div> */}
+              <div className="account__card__content d-flex justify-content-start">
+                <h3>{t("Note")}:</h3>
+              </div>
+              
+            </div>
         </div>
       </AccountCard>
     </div>
