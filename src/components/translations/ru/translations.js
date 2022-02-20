@@ -1,18 +1,21 @@
 export const TRANSLATIONS_RU = {
-    welcome:"Здрасьте",
+    welcome:"Добрий день",
     TrainingSchools: "Школы обучения",
     Likar: "Врачи",
     Seminars: "Семинары",
     CertifyingCommission: "Атестационные комиссии",
-    YourAccount: "Ваша учетная запись",
-    Login: "Войдите в Ваш кабинет",
-    Password: "Ваш пароль",
+    YourAccount: "Учетная запись",
+    Login: "Логин",
+    Password: "Пароль",
     eMail: "e-mail",
+    Phone:"Телефон",
     Registrate: "Зарегестрироваться",
-    FirstName: "Імя",
+    FirstName: "Имя",
     SecondName:"Фамилия",
     Surname: "Отчество",
     Submit: "Подтвердить",
-    Forget: "Забыли Ваш пароль?"
+    Forget: "Забыли Ваш пароль?",
+    Note:"Дополнительная информация",
+    Close:"Закрить"
 
    };
