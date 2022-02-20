@@ -4,15 +4,17 @@ export const TRANSLATIONS_UA = {
     Likar: "Лікарі",
     Seminars: "Семінари",
     CertifyingCommission: "Атестаційні комісії",
-    YourAccount: "Ваш обліковий запис",
-    Login: "Увійдіть до Вашого кабінету",
-    Password: "Ваш пароль:",
+    YourAccount: "Обліковий запис",
+    Login: "Логін",
+    Password: "Пароль",
     eMail: "e-mail",
     Registrate: "Зареструватися",
     FirstName: "Ім'я",
     SecondName:"Прізвище",
     Surname: "По-батькові",
     Submit: "Підтвердити",
-    Forget: "Забули Ваш пароль?"
+    Forget: "Забули Ваш пароль?",
+    Note: "Примітка",
+    Close:"Закрити"
 
    };
