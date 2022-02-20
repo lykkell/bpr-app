@@ -6,12 +6,15 @@ export const TRANSLATIONS_EN = {
     CertifyingCommission: "Certifying-commissions",
     YourAccount: "Your Account",
     Login: "Login",
-    Password: "Your password:",
-    eMail:"Enter your e-mail or phone number +380 (XX) XXXXXXX",
+    Password: "Your password",
+    eMail:"E-mail",
+    Phone: "Phone",
     Registrate: "Registrate",
     FirstName: "First name",
     SecondName:"Second name",
     Surname: "Surname",
     Submit: "Submit",
-    Forget: "Forget your password?"
+    Forget: "Forget your password?",
+    Note: "Note",
+    Close:"Close"
    };

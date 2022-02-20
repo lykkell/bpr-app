@@ -124,17 +124,18 @@ const App = () => {
       </Modal>
       <AccountCard lang={language} active={accountCard} setActive={setAccountCard}>
         <div className="container">
-          <h2 className="account__card__header">{t("Your account")}</h2>
+          <h2 className="account__card__header">{t("YourAccount")}</h2>
           <div className='account__card__header'>
           <div className="d-flex justify-content-center">
             <img src={accountpicture} className="accountpicture" alt="addpicture" />
           </div>
-            <h3>First name</h3>
-            <h3>Second name</h3>
-            <h3>Login account</h3>
-            <h3>Password account</h3>
-            <h3>email account</h3>
-            <h3>phone account</h3>
+            <h3>{t("FirstName")}:</h3>
+            <h3>{t("SecondName")}:</h3>
+            <h3>{t("Login")}:</h3>
+            <h3>{t("Password")}:</h3>
+            <h3>{t("eMail")}:</h3>
+            <h3>{t("Phone")}:</h3>
+            <h3>{t("Note")}:</h3>
           </div>
         </div>
       </AccountCard>
