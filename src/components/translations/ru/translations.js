@@ -5,7 +5,7 @@ export const TRANSLATIONS_RU = {
     Seminars: "Семинары",
     CertifyingCommission: "Атестационные комиссии",
     YourAccount: "Учетная запись",
-    Login: "Логин",
+    Login: "Вход",
     Password: "Пароль",
     eMail: "e-mail",
     Phone:"Телефон",
@@ -16,6 +16,10 @@ export const TRANSLATIONS_RU = {
     Submit: "Подтвердить",
     Forget: "Забыли Ваш пароль?",
     Note:"Дополнительная информация",
-    Close:"Закрить"
+    Close:"Закрить",
+    isEmpty: "Заполните поле",
+    minLengthError: "Слишком короткое название! ",
+    maxLengthError: "Слишком много символов!",
+    emailError: "Некорректний email!"
 
    };

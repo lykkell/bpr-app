@@ -16,5 +16,9 @@ export const TRANSLATIONS_EN = {
     Submit: "Submit",
     Forget: "Forget your password?",
     Note: "Note",
-    Close:"Close"
+    Close:"Close",
+    isEmpty: "The field must not be empty!",
+    minLengthError: "Very short name of email!",
+    maxLengthError: "Too many characters!",
+    emailError: "An incorrect email!"
    };

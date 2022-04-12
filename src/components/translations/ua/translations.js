@@ -5,7 +5,7 @@ export const TRANSLATIONS_UA = {
     Seminars: "Семінари",
     CertifyingCommission: "Атестаційні комісії",
     YourAccount: "Обліковий запис",
-    Login: "Логін",
+    Login: "Вхід",
     Password: "Пароль",
     eMail: "e-mail",
     Registrate: "Зареструватися",
@@ -15,6 +15,9 @@ export const TRANSLATIONS_UA = {
     Submit: "Підтвердити",
     Forget: "Забули Ваш пароль?",
     Note: "Примітка",
-    Close:"Закрити"
-
+    Close:"Закрити",
+    isEmpty: "Заповніть поле",
+    minLengthError: "Закоротка назва! ",
+    maxLengthError: "Забагато символів!",
+    emailError: "Некорректний email!"
    };

@@ -170,7 +170,7 @@ const App = () => {
               {t("maxLengthError")}</div>}
             {(email.isDirty && email.emailError) && <div style={{color:'yellow'}}>
               {t("emailError")}</div>}
-            <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)}value={email.value} className="modal__account" type="text" name="account" placeholder="Enter your phone (XX) XXXXXXX or e-mail"
+            <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)}value={email.value} className="modal__account" type="text" name="account" placeholder="A-Z.a-z@x.xx"
             ></input>
             <h3>{t("Password")}</h3>
             {(password.isDirty && password.isEmpty) && <div style={{color:'yellow'}}>
@@ -179,7 +179,7 @@ const App = () => {
               {t("minLengthError")}</div>}
             {(password.isDirty && password.maxLengthError) && <div style={{color:'yellow'}}>
               {t("maxLengthError")}</div>}
-            <input onChange={e => password.onChange(e)} onBlur={e => password.onBlur(e)}value={password.value} className="modal__account" type="password" name="password" placeholder="Enter your password"
+            <input onChange={e => password.onChange(e)} onBlur={e => password.onBlur(e)}value={password.value} className="modal__account" type="password" name="password" placeholder="0123456789, A-Z, a-z"
             ></input>
           </div>  
           <div className='modal__footer'>
