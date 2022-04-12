@@ -16,7 +16,7 @@ const useValidation = (value, validations) => {
     const [minLengthError, setMinLengthError] = useState(false)
     const [maxLengthError, setMaxLengthError] = useState(false)
     const [emailError, setEmailError] = useState (true)
-    const [inputValid, setInputValid] = useState (false)
+    // const [inputValid, setInputValid] = useState (false)
 
   useEffect( () => {
     for (const validation in validations) {
@@ -162,16 +162,23 @@ const App = () => {
         <form>
           <div> 
             <h3>{t("YourAccount")}:</h3>
-            {(email.isDirty && email.isEmpty) && <div style={{color:'yellow'}}>Поле не повинне бути порожнім</div>}
-            {(email.isDirty && email.minLengthError) && <div style={{color:'yellow'}}>Недостатня довжина</div>}
-            {(email.isDirty && email.maxLengthError) && <div style={{color:'yellow'}}>Завелика довжина</div>}
-            {(email.isDirty && email.emailError) && <div style={{color:'yellow'}}>Email некорректий</div>}
+            {(email.isDirty && email.isEmpty) && <div style={{color:'yellow'}}>
+              {t("isEmpty")}</div>}
+            {(email.isDirty && email.minLengthError) && <div style={{color:'yellow'}}>
+              {t("minLengthError")}</div>}
+            {(email.isDirty && email.maxLengthError) && <div style={{color:'yellow'}}>
+              {t("maxLengthError")}</div>}
+            {(email.isDirty && email.emailError) && <div style={{color:'yellow'}}>
+              {t("emailError")}</div>}
             <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)}value={email.value} className="modal__account" type="text" name="account" placeholder="Enter your phone (XX) XXXXXXX or e-mail"
             ></input>
             <h3>{t("Password")}</h3>
-            {(password.isDirty && password.isEmpty) && <div style={{color:'yellow'}}>Поле не повинне бути порожнім</div>}
-            {(password.isDirty && password.minLengthError) && <div style={{color:'yellow'}}>Слабкий пароль</div>}
-            {(password.isDirty && password.maxLengthError) && <div style={{color:'yellow'}}>long password</div>}
+            {(password.isDirty && password.isEmpty) && <div style={{color:'yellow'}}>
+              {t("isEmpty")}</div>}
+            {(password.isDirty && password.minLengthError) && <div style={{color:'yellow'}}>
+              {t("minLengthError")}</div>}
+            {(password.isDirty && password.maxLengthError) && <div style={{color:'yellow'}}>
+              {t("maxLengthError")}</div>}
             <input onChange={e => password.onChange(e)} onBlur={e => password.onBlur(e)}value={password.value} className="modal__account" type="password" name="password" placeholder="Enter your password"
             ></input>
           </div>  
