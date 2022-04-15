@@ -14,7 +14,9 @@ const Modal = ({active, setActive, children}) => {
                 
                 {children}
             </div>
+            <h3>test</h3>
         </div>
+       
     );
 };
   
