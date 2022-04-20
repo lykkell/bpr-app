@@ -83,27 +83,9 @@ const useImput = (initialValue, validations) => {
   }
 }
 
-// const [modalRegistrate, setModalRegistrate] = useState(false)
-// const [modalForgetPassword, setModalForgetPassword] = useState(false)
-// const [accountCard, setAccountCard] = useState(false)
-
-
-  
-
 const Field = () => {
 
-  // const FieldData = {
-  //   name: 'name',
-  //   type: 'type',
-  //   id: 'id',
-  //   minLength: 'minLegth',
-  //   maxLength: 'maxLength',
-  //   regEx: 'regEx',
-  //   errorMessage: 'errorMessage'
-  // };
-
   const { t } = useTranslation();
-  // const [modalLogin, setModalLogin] = useState(false)
   
   const [modalRegistrate, setModalRegistrate] = useState(false)
   const [modalForgetPassword, setModalForgetPassword] = useState(false)
