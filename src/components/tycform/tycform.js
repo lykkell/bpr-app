@@ -125,7 +125,7 @@ const Field = () => {
                   {t("maxLengthError")}</div>}
                 {(email.isDirty && email.emailError) && <div style={{color:'yellow'}}>
                   {t("emailError")}</div>}
-                <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)}value={email.value} className="modal__account" type="text" name="account" placeholder="A-Z.a-z@x.xx"
+                <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)}value={email.value} className="modal__account" type="text" name="account" placeholder="A-Z,a-z,0-9@x.xx"
                 ></input>
                 <h3>{t("Password")}</h3>
                 {(password.isDirty && password.isEmpty) && <div style={{color:'yellow'}}>

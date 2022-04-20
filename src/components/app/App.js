@@ -75,6 +75,7 @@ const App = () => {
       </div>
       {/* Modal windows */}
       <Modal lang={language} active={modalLogin} setActive={setModalLogin}>
+        {/* feilds of login form */}
         <Field lang={language}></Field>
       </Modal>
       {/* Account windows */}
